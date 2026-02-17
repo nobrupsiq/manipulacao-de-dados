@@ -15,6 +15,7 @@ async function handleData() {
 
 function preencherEstatisticas(transacoes: Transacao[]): void {
   const data = new Estatisticas(transacoes);
+  console.log(data);
   const totalElement = document.querySelector<HTMLElement>("#total span");
   if (totalElement) {
     totalElement.innerText = data.total.toLocaleString("pt-BR", {
