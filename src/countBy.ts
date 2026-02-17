@@ -1,9 +1,9 @@
-export interface countList {
+export interface CountList {
   [key: string]: number;
 }
 
 export default function countBy(arr: (string | number)[]) {
-  return arr.reduce((acc: countList, item) => {
+  return arr.reduce((acc: CountList, item) => {
     if (acc[item]) {
       acc[item] += 1;
     } else {
